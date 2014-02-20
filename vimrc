@@ -17,7 +17,8 @@ Bundle 'altercation/vim-colors-solarized'
 Bundle 'vim-scripts/matlab.vim'
 " latex-box
 Bundle 'LaTeX-Box-Team/LaTeX-Box'
-
+" make sure the colorscheme is set after the bundle call
+colorscheme solarized
 
 filetype plugin indent on     " required
 "

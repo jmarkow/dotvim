@@ -8,6 +8,15 @@ call vundle#rc()
 "let path = '~/some/path/here'
 "call vundle#rc(path)
 
+" enable syntax folding and set viewer
+let g:LatexBox_Folding = 1
+let g:LatexBox_latexmk_options = "-pvc -pdfps"
+let g:LatexBox_latexmk_preview_continuously = 1
+let g:LatexBox_latexmk_async = 1
+
+let g:LatexBox_viewer = "open /Applications/preview.app"
+let g:LatexBox_quickfix = 1
+
 " let Vundle manage Vundle, required
 Bundle 'gmarik/vundle'
 

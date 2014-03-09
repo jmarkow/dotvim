@@ -27,9 +27,17 @@ Bundle 'vim-scripts/matlab.vim'
 " latex-box
 Bundle 'LaTeX-Box-Team/LaTeX-Box'
 " make sure the colorscheme is set after the bundle call
-colorscheme solarized
+
+if has ("gui_running")
+	colorscheme solarized
+end
 
 filetype plugin indent on     " required
+
+" spell check
+
+autocmd BufNewFile,BufRead *.tex,README setlocal spell spelllang=en_us
+
 "
 " Brief help
 " :BundleList          - list configured bundles

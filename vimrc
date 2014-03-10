@@ -15,7 +15,8 @@ let g:LatexBox_latexmk_preview_continuously = 1
 let g:LatexBox_latexmk_async = 1
 
 let g:LatexBox_viewer = "open /Applications/preview.app"
-let g:LatexBox_quickfix = 1
+let g:LatexBox_quickfix = 2
+let g:LatexBox_show_warnings = 1
 
 " let Vundle manage Vundle, required
 Bundle 'gmarik/vundle'
